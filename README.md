@@ -4,14 +4,14 @@ This page contains support material for the paper: A Gharahighehi, C Vens and K 
 
 Four datasets are used in this study:
 
-    AOTM [1]
-    Movielens [2]
-    Globo.com [3]
-    Roularta
+* AOTM [1]: You can download the dataset from this [link](https://www.dropbox.com/sh/n281js5mgsvao6s/AADQbYxSFVPCun5DfwtsSxeda?dl=0).
+* Movielens [2] You can download the dataset from this [link](https://grouplens.org/datasets/hetrec-2011/).
+* Globo.com [3] You can download the dataset from this [link](https://www.kaggle.com/gspmoreira/news-portal-user-interactions-by-globocom).
+* Roularta
 
 # Implementation
 
-Set the dataset directory in run.sh and then run it. 
+Set the dataset directory in [run.sh](https://github.com/alirezagharahi/ensemble_hypergraph/blob/main/run.sh) and then run it.
 
 # References:
 [1] Brian McFee and Gert RG Lanckriet. 2012. Hypergraph Models of Playlist Dialects.. InISMIR, Vol. 12. Citeseer, 343–348.
