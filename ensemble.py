@@ -15,7 +15,7 @@ def create_args_parser():
 
     parser.add_argument(
             '--input_dataset', default='',
-            help='Input path of the folder with sessions in JSON lines file, organized by hour (exported by the Spark script - nar_preprocessing_addressa_01_dataproc.ipynb).')
+            help='Input path of the dataset.')
 
     return parser
 
