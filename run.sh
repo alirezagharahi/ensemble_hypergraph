@@ -1,4 +1,4 @@
 #!/bin/bash
-DATA_DIR="/home/alireza/HOME/RecSys-master/ensemble_hypergraph" && \
-python3 -m ensemble \
-	--input_dataset ${DATA_DIR}/datasets/aotm.csv
+DATA_DIR=".../ensemble_hypergraph" && \
+python -m ensemble \
+	--input_dataset ${DATA_DIR}/user_ratedmovies.dat

@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Nov  6 14:55:00 2019
 
-@author: u0106589
-"""
 import argparse
 import numpy as np
 import pandas as pd
@@ -393,10 +389,10 @@ def main():
     elif "chamealon" in input:
         row_id,column_id = 'userId','contentId'
         sep = ','
-        row_min,column_min = 100,100
-        bpr_f,bpr_i,bpr_r,bpr_lr = 129,1984,0.0412211670514582,0.00916093538495639
-        als_f,als_i,als_r = 107,1393,0.0225369671263697
-        h_r,h_e_r = 0.241367197412936,0.4554
+        row_min,column_min = 50,50
+        bpr_f,bpr_i,bpr_r,bpr_lr = 168,1598,0.037443718743735,0.0174401403559288
+        als_f,als_i,als_r = 152,1129,0.0432292432067999
+        w_h,h_r,h_e_r = 0.398649112750105,0.648542543892749,0.8301
     else:
         print("the input dataset is not defined")
     #reading the data
@@ -413,8 +409,8 @@ def main():
     train_set, test_set, user_index = train_test_split(inter, 10, fraction=None)
 
     # creating baseliens
-    als = implicit.als.AlternatingLeastSquares(factors=107,iterations=als_i,regularization=als_r) #alsmf
-    bpr = implicit.bpr.BayesianPersonalizedRanking(factors=bpr_f,iterations=bpr_i,regularization=bpr_r,learning_rate=bpr_lr) #bpr
+    als = implicit.als.AlternatingLeastSquares(factors=107,iterations=als_i,regularization=als_r, random_state=7) #alsmf
+    bpr = implicit.bpr.BayesianPersonalizedRanking(factors=bpr_f,iterations=bpr_i,regularization=bpr_r,learning_rate=bpr_lr,num_threads=1, random_state=7) #bpr
 
     result = []
 
