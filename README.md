@@ -1,6 +1,6 @@
 # An Ensemble Hypergraph Learning framework for Recommendation
 
-This page contains support material for the paper: A Gharahighehi, C Vens and K Pliakos, “An Ensemble Hypergraph Learning framework for Recommendation”, under review in 29th Conference on User Modeling, Adaptation and Personalization (UMAP).
+This page contains support material for the paper: A Gharahighehi, C Vens and K Pliakos, “An Ensemble Hypergraph Learning framework for Recommendation”, under review in 24th International Conference on Discovery Science.
 
 Four datasets are used in this study:
 
